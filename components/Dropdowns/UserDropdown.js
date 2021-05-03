@@ -29,9 +29,9 @@ const UserDropdown = () => {
         <div className="items-center flex">
           <span className="w-12 h-12 text-sm text-white bg-gray-300 inline-flex items-center justify-center rounded-full">
             <img
-              alt="..."
+              alt="User"
               className="w-full rounded-full align-middle border-none shadow-lg"
-              src={require("assets/img/team-1-800x800.jpg")}
+              src=""
             />
           </span>
         </div>
@@ -50,7 +50,7 @@ const UserDropdown = () => {
           }
           onClick={(e) => e.preventDefault()}
         >
-          Action
+          Homepage
         </a>
         <a
           href="#pablo"
@@ -59,7 +59,7 @@ const UserDropdown = () => {
           }
           onClick={(e) => e.preventDefault()}
         >
-          Another action
+          Company Link 
         </a>
         <a
           href="#pablo"
@@ -68,7 +68,7 @@ const UserDropdown = () => {
           }
           onClick={(e) => e.preventDefault()}
         >
-          Something else here
+          Setting
         </a>
         <div className="h-0 my-2 border border-solid border-gray-200" />
         <a
@@ -78,7 +78,7 @@ const UserDropdown = () => {
           }
           onClick={(e) => e.preventDefault()}
         >
-          Seprated link
+          Logout
         </a>
       </div>
     </>

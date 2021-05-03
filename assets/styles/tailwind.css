@@ -894,7 +894,6 @@ video {
 
 .form-checkbox {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   -webkit-print-color-adjust: exact;
           color-adjust: exact;
@@ -982,7 +981,6 @@ video {
 
 .appearance-none {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 

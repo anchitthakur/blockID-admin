@@ -32,6 +32,19 @@ export default function Register() {
                       className="block uppercase text-gray-700 text-xs font-bold mb-2"
                       htmlFor="grid-password"
                     >
+                      Company Name
+                    </label>
+                    <input
+                      type="email"
+                      className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div className="relative w-full mb-3">
+                    <label
+                      className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      htmlFor="grid-password"
+                    >
                       Email
                     </label>
                     <input
@@ -40,7 +53,6 @@ export default function Register() {
                       placeholder="Email"
                     />
                   </div>
-
                   <div className="relative w-full mb-3">
                     <label
                       className="block uppercase text-gray-700 text-xs font-bold mb-2"

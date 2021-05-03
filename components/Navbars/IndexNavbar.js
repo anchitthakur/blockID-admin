@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 // components
 
-import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
-
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
@@ -16,7 +14,7 @@ export default function Navbar(props) {
                 className="text-gray-800 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
                 href="#pablo"
               >
-                Notus NextJS
+                BlockId
               </a>
             </Link>
             <button
@@ -34,20 +32,30 @@ export default function Navbar(props) {
             }
             id="example-navbar-warning"
           >
-            <ul className="flex flex-col lg:flex-row list-none mr-auto">
-              <li className="flex items-center">
-                <a
-                  className="hover:text-gray-600 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus?ref=nnjs-index-navbar"
-                >
-                  <i className="text-gray-500 far fa-file-alt text-lg leading-lg mr-2" />{" "}
-                  Docs
-                </a>
-              </li>
-            </ul>
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="flex items-center">
-                <IndexDropdown />
+                <Link href="/auth/login">
+                  <a
+                    href="#pablo"
+                    className={
+                      "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+                    }
+                  >
+                    Login
+          </a>
+                </Link>
+              </li>
+              <li className="flex items-center">
+                <Link href="/auth/register">
+                  <a
+                    href="#pablo"
+                    className={
+                      "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
+                    }
+                  >
+                    Register
+          </a>
+                </Link>
               </li>
               <li className="flex items-center">
                 <a
