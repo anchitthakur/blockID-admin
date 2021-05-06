@@ -3730,3 +3730,20 @@ video {
     width: 66.666667%;
   }
 }
+
+
+input[type=file]::file-selector-button {
+  border: 2px solid black;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #1A202C;
+  transition: 1s;
+  color:white;
+}
+
+.hcenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
