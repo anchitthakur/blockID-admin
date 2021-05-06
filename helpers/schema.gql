@@ -1,0 +1,20 @@
+enum userType {
+    organization
+    consumer
+    vendor
+}
+type User {
+    email: String! @unique
+    orgName: String
+    type: userType!
+    adhaar: AdhaarInfo @relation
+}
+type AdhaarInfo {
+    aadharNumber: String!
+    address: String!
+    DOB: String!
+    owner: User!
+}
+type Query {
+    adhaar: AdhaarInfo
+}

@@ -3,8 +3,10 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import { getAuthCookie } from '../utils/auth-cookies';
 
-export default function Index() {
+
+export default function Index({token}) {
   return (
     <>
       <IndexNavbar fixed />
@@ -43,4 +45,9 @@ export default function Index() {
       </section>
     </>
   );
+}
+
+export async function getServerSideProps(ctx) {
+  const token = getAuthCookie(ctx.req);
+  return { props: { token: token || null } };
 }
