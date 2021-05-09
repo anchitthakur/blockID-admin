@@ -7,6 +7,9 @@ import { getAuthCookie } from '../utils/auth-cookies';
 
 
 export default function Index({token}) {
+
+  console.log({token})
+
   return (
     <>
       <IndexNavbar fixed />
