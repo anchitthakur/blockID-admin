@@ -160,30 +160,6 @@ export default function Sidebar() {
                   </a>
                 </Link>
               </li>
-
-              <li className="items-center">
-                <Link href="/admin/maps">
-                  <a
-                    href="#pablo"
-                    className={
-                      "text-xs uppercase py-3 font-bold block " +
-                      (router.pathname.indexOf("/admin/maps") !== -1
-                        ? "text-blue-500 hover:text-blue-600"
-                        : "text-gray-800 hover:text-gray-600")
-                    }
-                  >
-                    <i
-                      className={
-                        "fas fa-map-marked mr-2 text-sm " +
-                        (router.pathname.indexOf("/admin/maps") !== -1
-                          ? "opacity-75"
-                          : "text-gray-400")
-                      }
-                    ></i>{" "}
-                    Maps
-                  </a>
-                </Link>
-              </li>
             </ul>
           </div>
         </div>

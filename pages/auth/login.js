@@ -14,6 +14,7 @@ const onSubmit = async () => {
     const response = await axios.post('/api/login', {email, password});
     if (response.status === 200) {
         await router.push('/admin/dashboard');
+        console.log(response);
     } else {
         console.log(response);
     }

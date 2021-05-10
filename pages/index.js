@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import Footer from "components/Footers/Footer.js";
 import { getAuthCookie } from '../utils/auth-cookies';
 
 
@@ -18,10 +16,10 @@ export default function Index({token}) {
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <h2 className="font-semibold text-4xl text-gray-700">
-                BlockID
+                BLOCKID
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-gray-600">
-               It is an app through which ......
+              A Decentralized System that keeps track of user identity and helps companies in performing user identification related tasks.
               </p>
               <div className="mt-12">
                 <a
